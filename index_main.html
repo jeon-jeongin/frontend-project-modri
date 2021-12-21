@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>index_main</title>
+<link rel="stylesheet" type="text/css" href="./common.css">
+<link rel="stylesheet" type="text/css" href="./index_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	 	$('.search-form').on('input', function(){
+			if($('.search-form').val() == ''){
+				$('#btn-search').attr('disabled', true);
+			} else{
+				$('#btn-search').attr('disabled', false);
+			}
+		});
+	});
+</script>
+</head>
+<body>
+	<div class="header">
+		<div id="banner">
+			<a href="index_main.html" class="logo">
+				<h1 id="logo-left">모드리</h1>
+			</a>
+			<button type="button" id="btn-login-right" onclick="location.href = 'login.html'">로그인</button>
+		</div>
+	</div>
+	<div class="nav">
+		<div class="search">
+			<div> 
+				<img src="./image/product-search.png" width="350px" height="40px">
+			</div>
+			<form action="https://www.google.com/search" method="get">
+				<input name="q" type="text" class="search-form" placeholder="제품, 브랜드, 키워드 검색하세요.">
+				<input type="submit" id="btn-search" value="검색" disabled=true">
+			</form>
+		</div>
+	</div>
+	<div class="section">
+		<div class="main">
+			<a href="all_product.html" class="thumbnail" id="all">
+				<div class="category-title">모든제품</div>
+				<img src="image/category-01.jpg">
+			</a>
+			<a href="" class="thumbnail" id="skin">
+				<div class="category-title">스킨케어</div>
+				<img src="image/category-02.jpg">
+			</a>			
+			<a href="" class="thumbnail" id="clean">
+				<div class="category-title">클렌징/필링</div>
+				<img src="image/category-03.jpg">
+			</a>			
+			<a href="" class="thumbnail" id="sun">
+				<div class="category-title">선케어</div>
+				<img src="image/category-04.jpg">
+			</a>			
+			<a href="" class="thumbnail" id="laundry">
+				<div class="category-title">세탁용품</div>
+				<img src="image/category-05.jpg">
+			</a>			
+			<a href="" class="thumbnail" id="detergent">
+				<div class="category-title">세제</div>
+				<img src="image/category-06.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="footer">
+        <div class="footer-menu">
+            <ul>
+                <li class="mb">
+                    <a href="#">이용약관</a>
+                </li>
+                <li class="mb privacy-txt">
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li class="mb cscenter"">
+                    <a href="#">고객만족센터</a>
+                </li>
+                <li class="mb notice">
+                    <a href="#">공지사항</a>
+                </li>
+            </ul>
+        </div>
+        <hr/>
+        <div class="company-info">
+	    <p>
+		    <strong>모드리 : 더 가까이 더 자연스럽게</strong>
+		    <br>
+		    대한민국 서울특별시 OO구 OO동
+		    <span class="bar">|</span>
+		    대표자 : OOO
+		    <span class="bar">|</span>
+		    통신판매업신고 : 제 2021-XXXX-XXXX호
+		    <span class="bar">|</span>
+		    개인정보담당자 : 
+		    <a href="">XXXXXXX@OOOOO.com</a>
+	    </p>
+    </div>
+	</div>
+</body>
+</html>
+</html>

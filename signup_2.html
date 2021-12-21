@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>signup_2</title>
+<link rel="stylesheet" type="text/css" href="./common.css">
+<link rel="stylesheet" type="text/css" href="./signup_2.css">
+<script type="text/javascript">
+	window.onload = function(){
+		
+		document.signupForm.onsubmit = function() {
+			var idNode = document.getElementById("id");
+			var passNode = document.getElementById("pass");
+			var passCkNode = document.getElementById("passCk");
+			var nameNode = document.getElementById("name");
+			var genderNode = document.getElementById("gender");
+			var yearNode = document.getElementById("year");
+			var birthNode = document.getElementById("birth");
+			var dayNode = document.getElementById("day");
+			
+			if(idNode.value == "") {
+				alert("아이디를 입력하세요.");
+				idNode.focus();
+				return false;
+			}
+			
+			if(passNode.value == "") {
+				alert("비밀번호를 입력하세요.");
+				passNode.focus();
+				return false;
+			}
+			
+			var passCheck = /^(?=.*[a-zA-Z])(?=.*[!@#$%^&_*])[a-zA-Z0-9!@#$%^&_*]{7,9}$/i;
+			if(!(passCheck.test(passNode.value))) {
+				alert("비밀번호는 영문자, 숫자, 특수문자 조합으로 7-9자리를 사용해야합니다.");
+				passNode.value = null;
+				passNode.focus();
+				return false;
+			}
+			
+			if(passCkNode.value == ""){
+				alert("비밀번호 재확인을 입력하세요.");
+				passCkNode.focus();
+				return false;
+			} else{
+				if(passCkNode.value !== passNode.value) {
+					alert("비밀번호가 일치하지 않습니다.");
+					passCkNode.value = null;
+					passCkNode.focus();
+					return false;
+				}
+			}
+			
+			if(nameNode.value == "") {
+				alert("이름을 입력하세요.");
+				nameNode.focus();
+				return false;
+			}
+			
+			if(genderNode.value == "") {
+				alert("성별을 선택하세요.");
+				genderNode.focus();
+				return false;
+			}
+			
+			if(yearNode.value == "") {
+				alert("년도를 입력하세요.");
+				yearNode.focus();
+				return false;
+			}
+			
+			if(birthNode.value == "") {
+				alert("월을 선택하세요.");
+				birthNode.focus();
+				return false;
+			}
+			
+			if(dayNode.value == "") {
+				alert("일을 입력하세요.");
+				dayNode.focus();
+				return false;
+			}
+		}
+	};
+	
+</script>
+</head>
+<body>
+	<div class="header">
+		<div id="banner">
+			<a href="index_main.html" class="logo">
+				<h1 id="logo-left">모드리</h1>
+			</a>
+			<button type="button" id="btn-login-right" onclick="location.href = 'login.html'">로그인</button>
+		</div>
+	</div>
+	<div class="nav">
+		<form action="" method="post" class="signupForm" name="signupForm">
+			<div class="signup">
+				<p>아이디</p>
+				<input type="text" name="id" id="id">
+			</div>
+			<div class="signup">
+				<p>비밀번호</p>
+				<input type="password" name="pass" id="pass" placeholder="영문자, 숫자, 특수문자 조합으로 7-9자리">
+			</div>
+			<div class="signup">
+				<p>비밀번호 재확인</p>
+				<input type="password" name="passCk" id="passCk" placeholder="위에 설정한 비밀번호를 동일하게 입력하세요.">
+			</div>
+			<div class="signup">
+				<p>이름</p>
+				<input type="text" name="name" id="name">
+			</div>
+			<div class="signup">
+				<p>성별</p>
+				<select name="gender" id="gender">
+					 <option value="" selected="selected">선택하세요 </option>
+					 <option value="man" >남성</option>
+					 <option value="woman">여성</option>
+				</select>
+			</div>
+			<div class="signup">
+				<p>생년월일</p>
+				<input type="text" name="year" id="year" placeholder="년(4자)">
+				<select name="birth" id="birth">
+				 	<option value="" selected="selected">월</option>
+				 	<option value="month01">1</option>
+				 	<option value="month02">2</option>
+				 	<option value="month03">3</option>
+				 	<option value="month04">4</option>
+				 	<option value="month04">5</option>
+				 	<option value="month06">6</option>
+				 	<option value="month07">7</option>
+				 	<option value="month08">8</option>
+				 	<option value="month09">9</option>
+				 	<option value="month10">10</option>
+				 	<option value="month11">11</option>
+				 	<option value="month12">12</option>
+				</select>
+				<input type="text" name="day" id="day" placeholder="일">
+			</div>
+			<input type="submit" id="btn_signup" value="가입하기" name="btn_signup">
+		</form>
+	</div>
+	<div class="footer">
+        <div class="footer-menu">
+            <ul>
+                <li class="mb">
+                    <a href="#">이용약관</a>
+                </li>
+                <li class="mb privacy-txt">
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li class="mb cscenter"">
+                    <a href="#">고객만족센터</a>
+                </li>
+                <li class="mb notice">
+                    <a href="#">공지사항</a>
+                </li>
+            </ul>
+        </div>
+        <hr/>
+        <div class="company-info">
+	    <p>
+		    <strong>모드리 : 더 가까이 더 자연스럽게</strong>
+		    <br>
+		    대한민국 서울특별시 OO구 OO동
+		    <span class="bar">|</span>
+		    대표자 : OOO
+		    <span class="bar">|</span>
+		    통신판매업신고 : 제 2021-XXXX-XXXX호
+		    <span class="bar">|</span>
+		    개인정보담당자 : 
+		    <a href="">XXXXXXX@OOOOO.com</a>
+	    </p>
+    </div>
+	</div>
+</body>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>login</title>
+<link rel="stylesheet" type="text/css" href="./common.css">
+<link rel="stylesheet" type="text/css" href="./login.css">
+<script type="text/javascript">
+	window.onload = function(){	
+		var idNode = document.getElementById("id"); 
+		var passNode = document.getElementById("pass");
+		
+		var btn = document.getElementById("btn_log");	
+		
+		btn.onclick = function(){
+			if(idNode.value == ""){					
+				alert("아이디를 입력하세요.");
+				idNode.focus();
+				return false;						
+			}
+			
+			if(passNode.value == ""){
+				alert("비밀번호를 입력하세요.");
+				passNode.focus();
+				return false;
+			}
+			document.log_f.submit();
+		} 
+	}
+</script>
+</head>
+<body>
+	<div class="header">
+		<div id="banner">
+			<a href="index_main.html" class="logo">
+				<h1 id="logo-left">모드리</h1>
+			</a>
+			<button type="button" id="btn-login-right" onclick="location.href = 'login.html'">로그인</button>
+		</div>
+	</div>
+	<div class="nav">
+		<form action="login_process.jsp" method="post" class="loginForm" name="log_f">
+			<h2>로그인</h2>
+			<div class="idForm">
+				<input type="text" name="id" id="id" placeholder="아이디">
+			</div>
+			<div class="passForm">
+				<input type="password" name="pass" id="pass" placeholder="비밀번호">
+			</div>
+			<input type="button" id="btn_log" value="로그인">
+			<div class="btn_bottom">
+				모드리가 처음이신가요? <a href="signup_1.html">회원가입</a>
+			</div>
+		</form>
+	</div>
+	<div class="footer">
+        <div class="footer-menu">
+            <ul>
+                <li class="mb">
+                    <a href="#">이용약관</a>
+                </li>
+                <li class="mb privacy-txt">
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li class="mb cscenter"">
+                    <a href="#">고객만족센터</a>
+                </li>
+                <li class="mb notice">
+                    <a href="#">공지사항</a>
+                </li>
+            </ul>
+        </div>
+        <hr/>
+        <div class="company-info">
+	    <p>
+		    <strong>모드리 : 더 가까이 더 자연스럽게</strong>
+		    <br>
+		    대한민국 서울특별시 OO구 OO동
+		    <span class="bar">|</span>
+		    대표자 : OOO
+		    <span class="bar">|</span>
+		    통신판매업신고 : 제 2021-XXXX-XXXX호
+		    <span class="bar">|</span>
+		    개인정보담당자 : 
+		    <a href="">XXXXXXX@OOOOO.com</a>
+	    </p>
+    </div>
+	</div>
+</body>
+      
+</html>
