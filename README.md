@@ -8,6 +8,10 @@
 
 
 
+
+
+
+
 ### ✨ 소개
 
 ---
@@ -15,6 +19,10 @@
 **프로젝트 기간** : 2021년 12월 15일 ~ 2021년 12월 17일
 
 👩‍💻 전정인 : Front-end HTML, CSS Javascript, jQuery 사용으로 구축
+
+
+
+
 
 
 
@@ -31,6 +39,11 @@
 
 
 
+
+
+
+
+
 ### 웹 페이지 프로토타입
 
 ---
@@ -44,16 +57,21 @@
 
 
 
+
+
+
 ### UI
 
 ---
 
 | ![스크린샷 2022-04-15 오후 5 30 27](https://user-images.githubusercontent.com/96180427/163549219-b87a3495-fceb-44f2-a132-99f32745b221.png) |
 | ------------------------------------------------------------ |
-| ![스크린샷 2022-04-15 오후 5 32 14](https://user-images.githubusercontent.com/96180427/163549402-344584cd-3536-4768-9b8e-64f4298cf59d.png) |
+| ![스크린샷 2022-04-15 오후 5 31 32](https://user-images.githubusercontent.com/96180427/163551830-526a6ef2-40f3-49f8-aa1c-7c08769de858.png) |
 | ![스크린샷 2022-04-15 오후 5 30 40](https://user-images.githubusercontent.com/96180427/163549251-38247b20-044a-4373-aa7f-b0d4a1f66f57.png) |
 | ![스크린샷 2022-04-15 오후 5 31 08](https://user-images.githubusercontent.com/96180427/163549331-b92fedba-f49c-4319-9c36-d98a0bf4479e.png) |
 | ![스크린샷 2022-04-15 오후 5 31 18](https://user-images.githubusercontent.com/96180427/163549378-4df68052-8910-407a-8842-4eb94cc74202.png) |
+
+
 
 
 
@@ -70,6 +88,8 @@ Tools : ![img](https://img.shields.io/badge/Eclipse%20IDE-fefefe?style=flat&logo
 
 Front-end : ![img](https://img.shields.io/badge/HTML5-fefefe?style=flat&logo=HTML5&logoColor=E34F26)![img](https://img.shields.io/badge/CSS-fefefe?style=flat&logo=CSS3&logoColor=1572B6)![img](https://img.shields.io/badge/JavaScript-fefefe?style=flat&logo=JavaScript&logoColor=F7DF1E)  
 Server : ![img](https://img.shields.io/badge/Apache%20Tomcat-fefefe?style=flat&logo=Apache%20Tomcat&logoColor=F8DC75) 
+
+
 
 
 
